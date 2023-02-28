@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="style.css" />
+    <title>SocialBook</title>
+    <link rel="icon" href="images/xxlogo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/84431831cc.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img src="images/logo.png" alt="" class="logo" />
+        <ul>
+          <li><img src="images/notification.png" alt="" /></li>
+          <li><img src="images/inbox.png" alt="" /></li>
+          <li><img src="images/video.png" alt="" /></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="images/search.png" alt="" />
+          <input type="text" placeholder="search" />
+        </div>
+        <div class="nav-user-icon online">
+          <img src="images/profile-pic.png" onclick="toggleMenu()">
+          
+        </div>
+      </div>
+      <div class="settings-menu" id="subMenu">
+
+        <div id="dark-btn" class="dark-btn-on">
+          <span> </span>
+        </div>
+        <div class="settings-menu-inner">
+
+          <div class="user-profile">
+            <img src="images/profile-pic.png" alt="">
+            <div>
+              <p>John Nicholson</p>
+             <a href="#">See your profile</a>
+            </div>
+          </div>
+          <hr>
+          <div class="user-profile">
+            <img src="images/feedback.png" alt="">
+            <div>
+              <p>Give Feedback</p>
+             <a href="#">Help us to improve the new design</a>
+            </div>
+          </div>
+          <hr>
+
+          <div class="settings-links">
+            <img src="images/setting.png" alt="" class="settings-icon">
+            <a href="#">Settings & Privacy <img src="images/arrow.png" alt="" width="10px"></a>
+          </div>
+          <div class="settings-links">
+            <img src="images/help.png" alt="" class="settings-icon">
+            <a href="#">Help & Support <img src="images/arrow.png" alt="" width="10px"></a>
+          </div>
+          <div class="settings-links">
+            <img src="images/display.png" alt="" class="settings-icon">
+            <a href="#">Display & Accessibility <img src="images/arrow.png" alt="" width="10px"></a>
+          </div>
+          <div class="settings-links">
+            <img src="images/logout.png" alt="" class="settings-icon">
+            <a href="#">Logout <img src="images/arrow.png" alt="" width="10px"></a>
+          </div>
+        </div>
+      </div>
+    
+
+
+    </nav>
+    <div class="container">
+      <!-- -------left-sidebar------- -->
+      <div class="left-sidebar">
+        <div class="imp-links">
+          <a href="#"><img src="images/news.png" alt="" />Latest News</a>
+          <a href="#"><img src="images/friends.png" alt="" />Friends</a>
+          <a href="#"><img src="images/group.png" alt="" />Group</a>
+          <a href="#"><img src="images/marketplace.png" alt="" />MarketPlace</a>
+          <a href="#"><img src="images/watch.png" alt="" />Watch</a>
+          <a href="#">See more</a>
+        </div>
+        <div class="shortcut-links">
+          <p>Your Shortcuts</p>
+          <a href="#"><img src="images/shortcut-1.png" alt="" />Web Developers</a>
+            <a href="#"><img src="images/shortcut-2.png" alt="" />Web Design</a>
+            <a href="#"><img src="images/shortcut-3.png" alt="" />Full Stack Development</a>
+            <a href="#"><img src="images/shortcut-4.png" alt="" />Website Experts</a>
+          
+        </div>
+      </div>
+      <!-- ------left-sidebar------- -->
+
+      <!-- main content -->
+      <div class="main-content">
+        <div class="story-gallery">
+          <div class="story story1">
+            <img src="images/upload.png" alt="">
+            <p>Post Story</p>
+          </div>
+          <div class="story story2">
+            <img src="images/member-1.png" alt="">
+            <p>Alison Mina</p>
+          </div>
+          <div class="story story3">
+            <img src="images/member-2.png" alt="">
+            <p>Aiden</p>
+          </div>
+          <div class="story story4">
+            <img src="images/member-3.png" alt="">
+            <p>Jennifer</p>
+          </div>
+          <div class="story story5">
+            <img src="images/member-4.png" alt="">
+            <p>Harry </p>
+          </div>
+        </div>
+
+        <div class="write-post-container">
+          <div class="user-profile">
+            <img src="images/profile-pic.png" alt="">
+            <div>
+              <p>John Nicholson</p>
+              <small>Public<i class="fa-solid fa-caret-down" style="margin-left: 4px;"></i></small>
+            </div>
+          </div>
+          <div class="post-input-container">
+            <textarea rows="3" placeholder="What's on your mind, John"></textarea>
+            <div class="add-post-links">
+              <a href="#"><img src="images/live-video.png" alt="">Live  Video</a>
+              <a href="#"><img src="images/photo.png" alt="">photo/Video</a>
+              <a href="#"><img src="images/feeling.png" alt="">Felling/Activity</a>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+
+            <div class="user-profile">
+              <img src="images/profile-pic.png" alt="">
+              <div>
+                <p>John Nicholson</p>
+                <span>June 24 2021,13:48 Pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis-v" style="margin-left: 4px;"></i></a>
+          </div>
+          <p class="post-text"><span>SocialBook</span> is the most popular social network site on the internet. It was launched in February 2004 by former-Harvard University student Mark Zuckerberg. <a href="#">#photography</a><a href="#"> #fashion</a></p>
+          <img src="images/feed-image-1.png" alt="" class="post-img">
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like-blue.png" alt="">120</div>
+              <div><img src="images/comments.png" alt="">100</div>
+              <div><img src="images/share.png" alt="">45</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.png" alt=""><i class="fa-solid fa-caret-down" style="margin-left: 4px;"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+
+            <div class="user-profile">
+              <img src="images/profile-pic.png" alt="">
+              <div>
+                <p>John Nicholson</p>
+                <span>June 24 2021,13:48 Pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis-v" style="margin-left: 4px;"></i></a>
+          </div>
+          <p class="post-text"><span>SocialBook</span> is the most popular social network site on the internet. It was launched in February 2004 by former-Harvard University student Mark Zuckerberg. <a href="#">#photography</a><a href="#"> #fashion</a></p>
+          <img src="images/feed-image-2.png" alt="" class="post-img">
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like.png" alt="">190</div>
+              <div><img src="images/comments.png" alt="">120</div>
+              <div><img src="images/share.png" alt="">56</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.png" alt=""><i class="fa-solid fa-caret-down" style="margin-left: 4px;"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+
+            <div class="user-profile">
+              <img src="images/profile-pic.png" alt="">
+              <div>
+                <p>John Nicholson</p>
+                <span>June 24 2021,13:48 Pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis-v" style="margin-left: 4px;"></i></a>
+          </div>
+          <p class="post-text"><span>SocialBook</span> is the most popular social network site on the internet. It was launched in February 2004 by former-Harvard University student Mark Zuckerberg. <a href="#">#photography</a><a href="#"> #fashion</a></p>
+          <img src="images/feed-image-3.png" alt="" class="post-img">
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like.png" alt="">190</div>
+              <div><img src="images/comments.png" alt="">120</div>
+              <div><img src="images/share.png" alt="">56</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.png" alt=""><i class="fa-solid fa-caret-down" style="margin-left: 4px;"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+
+            <div class="user-profile">
+              <img src="images/profile-pic.png" alt="">
+              <div>
+                <p>John Nicholson</p>
+                <span>June 24 2021,13:48 Pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis-v" style="margin-left: 4px;"></i></a>
+          </div>
+          <p class="post-text"><span>SocialBook</span> is the most popular social network site on the internet. It was launched in February 2004 by former-Harvard University student Mark Zuckerberg. <a href="#">#photography</a><a href="#"> #fashion</a></p>
+          <img src="images/feed-image-4.png" alt="" class="post-img">
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like.png" alt="">190</div>
+              <div><img src="images/comments.png" alt="">120</div>
+              <div><img src="images/share.png" alt="">56</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.png" alt=""><i class="fa-solid fa-caret-down" style="margin-left: 4px;"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+
+            <div class="user-profile">
+              <img src="images/profile-pic.png" alt="">
+              <div>
+                <p>John Nicholson</p>
+                <span>June 24 2021,13:48 Pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis-v" style="margin-left: 4px;"></i></a>
+          </div>
+          <p class="post-text"><span>SocialBook</span> is the most popular social network site on the internet. It was launched in February 2004 by former-Harvard University student Mark Zuckerberg. <a href="#">#photography</a><a href="#"> #fashion</a></p>
+          <img src="images/feed-image-5.png" alt="" class="post-img">
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like.png" alt="">190</div>
+              <div><img src="images/comments.png" alt="">120</div>
+              <div><img src="images/share.png" alt="">56</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.png" alt=""><i class="fa-solid fa-caret-down" style="margin-left: 4px;"></i>
+            </div>
+          </div>
+        </div>
+         
+
+        <button type="button" class="load-more">Load More</button>
+
+
+
+      </div>
+      <!-- main content -->
+      <!-- right-sidebar -->
+      <div class="right-sidebar">
+        <div class="sidebar-title">
+            <h4>Events</h4>
+            <a href="#">See All</a>
+        </div>
+        <div class="events">
+            <div class="left-event">
+                <h3>18</h3>
+                <span>March</span>
+            </div>
+            <div class="right-event">
+                <h4>Social Media</h4>
+                <p><i class="fa-solid fa-location-dot"></i>Willson Tech Park</p>
+                <a href="#">More Info   </a>
+            </div>
+        </div>
+        <div class="events">
+            <div class="left-event">
+                <h3>20</h3>
+                <span>June</span>
+            </div>
+            <div class="right-event">
+                <h4>Mobile Marketing</h4>
+                <p><i class="fa-solid fa-location-dot"></i>National Park</p>
+                <a href="#">More Info   </a>
+            </div>
+        </div>
+        <div class="sidebar-title">
+            <h4>Advertisement</h4>
+            <a href="#">Close</a>
+        </div>
+        <img src="images/advertisement.png" alt="" class="sidebar-ads">
+        <div class="sidebar-title">
+            <h4>Conversation</h4>
+            <a href="#">Hide Chat</a>
+        </div>
+        <div class="online-list">
+            <div class="online">
+                <img src="images/member-1.png" alt="">
+            </div>
+            <p>Alison Mina</p>
+        </div>
+        <div class="online-list">
+            <div class="online">
+                <img src="images/member-2.png" alt="">
+            </div>
+            <p>Aiden</p>
+        </div>
+        <div class="online-list">
+            <div class="online">
+                <img src="images/member-3.png" alt="">
+            </div>
+            <p>Jennifer</p>
+        </div>
+     
+      </div>
+      <!-- right-sidebar -->
+    </div>
+    <div class="footer">
+      <p>Copyright &copy; 2023 - www.socialbook.com</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
